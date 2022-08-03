@@ -30,6 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['magic-cart.herokuapp.com', 'localhost']
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-gitmulc-magiccart-q4w5jny1ppi.ws-eu54.gitpod.io']
+
 
 # Application definition
 
