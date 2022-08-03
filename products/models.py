@@ -12,6 +12,7 @@ class Card(models.Model):
     cmc = models.DecimalField(max_digits=2, decimal_places=1, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     version = models.CharField(max_length=254, blank=True)
+    card_img = CloudinaryField('card')
 
     def __str__(self):
         return self.name
