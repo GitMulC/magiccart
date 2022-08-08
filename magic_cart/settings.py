@@ -30,7 +30,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['magic-cart.herokuapp.com', 'localhost']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-gitmulc-magiccart-q4w5jny1ppi.ws-eu54.gitpod.io']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-gitmulc-magiccart-q4w5jny1ppi.ws-eu54.gitpod.io',
+    'https://8000-gitmulc-magiccart-q4w5jny1ppi.ws-eu59.gitpod.io',
+    'https://*.gitpod.io']
 
 
 # Application definition
@@ -43,6 +46,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'cloudinary_storage',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'cloudinary',
     'products',
     'wishlist',
@@ -68,13 +75,33 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',
+                'django.template.context_processors.request', # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
         },
     },
 ]
+
+AUTHENTICATION_BACKENDS = [
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+SITE_ID = 1
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'magic_cart.wsgi.application'
 
