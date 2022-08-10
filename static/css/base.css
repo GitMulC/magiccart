@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Rubik&display=swap');
+
 html{
     height: 100%;
 }
 
 body{
-    background: url('media/home-background.png');
+    background-image: url('/media/home-background.png');
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: Rubik, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 /* from Bulma */
