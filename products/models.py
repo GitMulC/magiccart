@@ -11,8 +11,8 @@ class Card(models.Model):
     rarity = models.CharField(max_length=254)
     cmc = models.DecimalField(max_digits=2, decimal_places=1, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    version = models.CharField(max_length=254, blank=True)
     card_img = CloudinaryField('card')
+    card_img_url =models.URLField(max_length=1024, null=True, blank=True)
 
     def __str__(self):
         return self.name
