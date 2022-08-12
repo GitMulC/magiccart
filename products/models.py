@@ -12,6 +12,7 @@ class Type(models.Model):
         return self.friendly_name
 
 class Card(models.Model):
+    type = models.ForeignKey('Type', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=30)
     color = CloudinaryField('mana_symbol')
     oracle_text = models.CharField(max_length=254, blank=True)
