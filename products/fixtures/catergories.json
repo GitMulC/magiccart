@@ -1,0 +1,79 @@
+[{
+    "pk": 1,
+    "model": "products.category",
+    "fields":{
+        "name": "legendary",
+        "friendly_name": "Legendary"
+    }
+},
+{
+    "pk": 2,
+    "model": "products.category",
+    "fields":{
+        "name": "creature",
+        "friendly_name": "Creature"
+    }
+},
+{
+    "pk": 3,
+    "model": "products.category",
+    "fields":{
+        "name": "instant",
+        "friendly_name": "Instant"
+    }
+},
+{
+        "pk": 4,
+        "model": "products.category",
+        "fields":{
+            "fields": {
+                "name": "sorcery",
+                "friendly_name": "Sorcery"
+            }
+        }
+    
+},
+{
+    "pk": 5,
+    "model": "products.category",
+    "fields":{
+        "fields": {
+            "name": "land",
+            "friendly_name": "Land"
+        }
+    }
+
+},
+{
+        "pk": 6,
+        "model": "products.category",
+        "fields":{
+            "fields": {
+                "name": "artifact",
+                "friendly_name": "Artifact"
+            }
+        }
+    
+},
+{
+    "pk": 7,
+    "model": "products.category",
+    "fields":{
+        "fields": {
+            "name": "enchantment",
+            "friendly_name": "Enchantment"
+        }
+    }
+
+},
+{
+    "pk": 8,
+    "model": "products.category",
+    "fields":{
+        "fields": {
+            "name": "planeswalker",
+            "friendly_name": "Planeswalker"
+        }
+    }
+
+}]
