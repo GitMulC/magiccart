@@ -1,7 +1,7 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
 
-class Catergory(models.Model):
+class Type(models.Model):
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
