@@ -23,13 +23,11 @@
     }
 },
 {
-        "pk": 4,
-        "model": "products.type",
-        "fields":{
-            "fields": {
-                "name": "sorcery",
-                "friendly_name": "Sorcery"
-            }
+    "pk": 4,
+    "model": "products.type",
+    "fields":{
+        "name": "sorcery",
+        "friendly_name": "Sorcery"
         }
     
 },
@@ -37,21 +35,18 @@
     "pk": 5,
     "model": "products.type",
     "fields":{
-        "fields": {
-            "name": "land",
-            "friendly_name": "Land"
-        }
+        "name": "land",
+        "friendly_name": "Land"
     }
 
 },
 {
-        "pk": 6,
+    "pk": 6,
         "model": "products.type",
         "fields":{
-            "fields": {
-                "name": "artifact",
-                "friendly_name": "Artifact"
-            }
+        "name": "artifact",
+        "friendly_name": "Artifact"
+            
         }
     
 },
@@ -59,10 +54,9 @@
     "pk": 7,
     "model": "products.type",
     "fields":{
-        "fields": {
-            "name": "enchantment",
-            "friendly_name": "Enchantment"
-        }
+        "name": "enchantment",
+        "friendly_name": "Enchantment"
+        
     }
 
 },
@@ -70,10 +64,8 @@
     "pk": 8,
     "model": "products.type",
     "fields":{
-        "fields": {
-            "name": "planeswalker",
-            "friendly_name": "Planeswalker"
-        }
+        "name": "planeswalker",
+        "friendly_name": "Planeswalker" 
     }
 
 }]
