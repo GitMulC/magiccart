@@ -20,7 +20,8 @@ def all_cards(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 cards = cards.annotate(lower_name=Lower('name'))
-
+            if sortkey == 'type':
+                sortkey = 'type__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
