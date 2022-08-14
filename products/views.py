@@ -10,8 +10,23 @@ def all_cards(request):
     cards = Card.objects.all()
     query = None
     types = None
+    sort = None
+    direction = None
 
     if request.GET:
+        if sort in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                cards = cards.annotate(lower_name=Lower('name'))
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            cards = cards.order_by(sortkey)
+
         if 'type' in request.GET:
             types = request.GET['type'].split(',')
             cards = cards.filter(type__name__in=types)
@@ -27,10 +42,13 @@ def all_cards(request):
             queries = Q(name__icontains=query) | Q(rarity__icontains=query)
             cards = cards.filter(queries)
 
+    current_sorting = f'{sort}_{direction}'
+
     context = {
         'products': cards,
         'search_term': query,
         'current_types': types,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'cards/cards.html', context)
