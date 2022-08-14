@@ -101,7 +101,16 @@
               <div class="col-sm">
 
                 <nav class="navbar navbar-light bg-light d-flex justify-content-center mb-0">
-                  <a href="{% url 'products' %}">All Cards</a>
+                  <a href="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All Cards
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?sort=name&direction=asc">By Name</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?sort=type&direction=asc">By Type</a>
+                    <a class="dropdown-item" href="{% url 'products' %}">All Cards</a>
+
+                  </div>
                 </nav>
               </div>
               <div class="col-sm">
@@ -128,6 +137,7 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?sort=name&direction=asc">By Name</a>
                     <a class="dropdown-item" href="{% url 'products' %}?sort=type&direction=asc">By Type</a>
                   </div>
                 </nav>
