@@ -81,3 +81,8 @@
             </div>
     </div>
 {% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'cards/includes/quantity_input_script.html' %}
+{% endblock %}
