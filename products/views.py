@@ -2,7 +2,10 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
+
+
 from .models import Card, Type
+from .forms import ProductForm
 
 # Create your views here.
 def all_cards(request):
@@ -66,3 +69,14 @@ def card_detail(request, card_id):
     }
 
     return render(request, 'cards/card_detail.html', context)
+
+
+def add_card(request):
+    """ Add cards to the store """
+    form = ProductForm()
+    template = 'products/add_card.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'cards/add_card.html', context)
