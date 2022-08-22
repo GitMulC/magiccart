@@ -90,3 +90,26 @@ def add_card(request):
     }
 
     return render(request, 'cards/add_card.html', context)
+
+def edit_card(request):
+    """ Update cards on the store """
+    card = get_object_or_404(Card, pk=card_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=card)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated product!')
+            return redirect(reverse('product_detail', args=[card.id]))
+        else:
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+    else:
+        form = ProductForm(instance=card)
+        messages.info(request, f'You are editing {card.name}')
+
+    template = 'products/edit_card.html'
+    context = {
+        'form': form,
+        'card': card,
+    }
+
+    return render(request, template, context)
