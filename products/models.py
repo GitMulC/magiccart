@@ -20,7 +20,7 @@ class Card(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     set = models.TextField(blank=True)
     rarity = models.TextField(blank=True)
-    cmc = models.DecimalField(max_digits=2, decimal_places=1, blank=True)
+    cmc = models.DecimalField(max_digits=2, decimal_places=1, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     card_img = CloudinaryField('card', null=True, blank=True)
     card_img_url = models.URLField(max_length=1024, blank=True)

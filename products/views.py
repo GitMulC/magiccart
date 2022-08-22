@@ -73,7 +73,17 @@ def card_detail(request, card_id):
 
 def add_card(request):
     """ Add cards to the store """
-    form = ProductForm()
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added card!')
+            return redirect(reverse('add_card'))
+        else:
+            messages.error(request, 'Failed to add card. Please ensure the form is valid.')
+    else:
+        form = ProductForm()
+    
     template = 'products/add_card.html'
     context = {
         'form': form,
