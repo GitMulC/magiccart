@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -71,8 +72,13 @@ def card_detail(request, card_id):
     return render(request, 'cards/card_detail.html', context)
 
 
+@login_required
 def add_card(request):
     """ Add cards to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -91,8 +97,15 @@ def add_card(request):
 
     return render(request, 'cards/add_card.html', context)
 
+
+
+@login_required
 def edit_card(request, card_id):
     """ Update cards on the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that')
+        return redirect(reverse('home'))
+
     card = get_object_or_404(Card, pk=card_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=card)
@@ -114,8 +127,15 @@ def edit_card(request, card_id):
 
     return render(request, template, context)
 
+
+
+@login_required
 def delete_card(request, card_id):
     """ Delete a card from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that')
+        return redirect(reverse('home'))
+
     card = get_object_or_404(Card, pk=card_id)
     card.delete()
     messages.success(request, 'Card deleted!')
