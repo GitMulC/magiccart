@@ -76,9 +76,9 @@ def add_card(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            card = form.save()
             messages.success(request, 'Successfully added card!')
-            return redirect(reverse('add_card'))
+            return redirect(reverse('card_detail', args=[card.id]))
         else:
             messages.error(request, 'Failed to add card. Please ensure the form is valid.')
     else:
@@ -91,25 +91,32 @@ def add_card(request):
 
     return render(request, 'cards/add_card.html', context)
 
-def edit_card(request):
+def edit_card(request, card_id):
     """ Update cards on the store """
     card = get_object_or_404(Card, pk=card_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=card)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated product!')
-            return redirect(reverse('product_detail', args=[card.id]))
+            messages.success(request, 'Successfully updated card!')
+            return redirect(reverse('card_detail', args=[card.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update card. Please ensure the form is valid.')
     else:
         form = ProductForm(instance=card)
         messages.info(request, f'You are editing {card.name}')
 
-    template = 'products/edit_card.html'
+    template = 'cards/edit_card.html'
     context = {
         'form': form,
         'card': card,
     }
 
     return render(request, template, context)
+
+def delete_card(request, card_id):
+    """ Delete a card from the store """
+    card = get_object_or_404(Card, pk=card_id)
+    card.delete()
+    messages.success(request, 'Card deleted!')
+    return redirect(reverse('products'))
