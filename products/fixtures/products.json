@@ -3,16 +3,19 @@
         "pk": 1,
         "model": "products.card",
         "fields": {
-            "name": "Yuriko the Tiger's Shadow",
-            "color": "UB",
-            "oracle_text": "Commander ninjutsu {U}{B} ({U}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand or the command zone tapped and attacking.) Whenever a Ninja you control deals combat damage to a player, reveal the top card of your library and put that card into your hand. Each opponent loses life equal to that card’s mana value.",
-            "flavor_text": "",
-            "price": 10.99,
-            "set": "Commander 2018",
-            "rarity": "Rare",
-            "cmc": 3,
-            "card_img": "c18-52-yuriko-the-tiger-s-shadow.jpg",
-            "card_img_url": "https://c1.scryfall.com/file/scryfall-cards/large/front/3/b/3bd81ae6-e628-447a-a36b-597e63ede295.jpg?1592710334"
+            "name": "Anje Falkenrath",
+            "mana_cost": "{1}{B}{R}",
+            "cmc": 3.0,
+            "type_line": "Legendary Creature — Vampire",
+            "oracle_text": "Haste\n{T}, Discard a card: Draw a card.\nWhenever you discard a card, if it has madness, untap Anje Falkenrath.",
+            "flavor_text": "\"We all hide a little madness behind our sophistication, do we not?\"",
+            "colors": [
+              "B",
+              "R"
+            ],
+            "card_img": "media/c19-37-anje-falkenrath.jpg",
+            "card_img_url": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/1/913dd06f-ed2f-4128-9c9d-9cd0d8a55425.jpg?1568003632",
+            "price": 1.97
         }
     }
 ]
