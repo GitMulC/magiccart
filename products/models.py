@@ -14,17 +14,17 @@ class Type(models.Model):
 
 class Card(models.Model):
     name = models.CharField(max_length=30)
-    color = models.CharField(max_length=254)
+    mana_cost = models.CharField(max_length=254, blank=True)
     cmc = models.DecimalField(max_digits=2, decimal_places=1, null=True, blank=True)
-    card_img = CloudinaryField('card', null=True, blank=True)
-    card_img_url = models.URLField(max_length=1024, blank=True)
-    type = models.ForeignKey('Type', null=True, blank=True, on_delete=models.SET_NULL)
-    set = models.TextField(blank=True)
-    rarity = models.TextField(blank=True)
+    type_line = models.CharField(max_length=254)
     oracle_text = models.TextField(blank=True)
     flavor_text = models.TextField(blank=True)
+    colors = models.JSONField()
+    card_img = CloudinaryField('card', null=True, blank=True)
+    card_img_url = models.URLField(max_length=1024, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    user_favorite = models.ManyToManyField(User, related_name='wishlist_item', blank=True)
+    type = models.ForeignKey('Type', null=True, blank=True, on_delete=models.SET_NULL)
+    user_favorite = models.ManyToManyField(User, related_name='user_favorite', blank=True)
 
     def __str__(self):
         return self.name

@@ -5,9 +5,7 @@ from .models import Card, Type
 class CardAdmin(admin.ModelAdmin):
     list_display = (
         'name',
-        'color',
-        'type',
-        'rarity',
+        'colors',
         'price',
     )
 
