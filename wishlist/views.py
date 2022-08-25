@@ -13,4 +13,21 @@ def display_wishlist(request):
     }
 
     return render(request, 'wishlist/wishlist.html', context)
-    
+
+
+@login_required
+def add_to_wishlist(request, card_id):
+    """ A view to add cards to your wishlist """
+    card = get_object_or_404(Card, id=card_id)
+
+    if card.user_favorite.filter(id=request.user.id).exists():
+        card.user_favorite.remove(request.user)
+        messages.success(request,
+                         f'{card.name} has been \
+                         removed from your wishlist.')
+    else:
+        card.user_favorite.add(request.user)
+        messages.success(request,
+                         f'{card.name} has been \
+                         added from your wishlist.')
+    return HttpResponseRedirect(request.META["HTTP_REFERER"])
