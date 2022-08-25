@@ -80,7 +80,12 @@ The black colour `#f0f0f0` was used as a background colour primarily. It is foun
 ## Credits
 
 ### Content
-
+- Code used for wishlist view taken from [YouTube](https://www.youtube.com/watch?v=OgA0TTKAtqQ&t=1984s)
+- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- Coolors.co was used to generate a color palette for the site. [Coolors](https://coolors.co/)
+- Responsive images were generated on the site Am I Responsive?. [Am I Responsive?](http://ami.responsivedesign.is/)
+- Screenshots and images edited using graphic editor Microsoft Paint. [Mircosoft Paint](https://support.microsoft.com/en-us/windows/open-microsoft-paint-ead1dc5c-abc4-fd2c-d81e-ebb013fbc113)
+- Footer structure and style taken from [mdbootstrap](https://mdbootstrap.com/docs/b4/jquery/navigation/footer/)
 
 
 ### Media
