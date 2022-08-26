@@ -6,4 +6,6 @@ from .models import Subscriber
 class SubscriberAdmin(admin.ModelAdmin):
     list_display = ('email', 'date_subscribed')
 
-    ordering = ('-date_subscribed')
+    ordering = ('-date_subscribed',)
+
+admin.site.register(Subscriber, SubscriberAdmin)
