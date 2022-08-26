@@ -203,41 +203,26 @@
 
     <!-- Footer -->
 <footer class="page-footer font-small magic-cart-bg text-black">
-
-  <!-- Footer Links -->
   <div class="container text-center text-md-left">
-
-    <!-- Grid row -->
     <div class="row">
-
-      <!-- Grid column -->
       <div class="col-md-3 mx-auto">
 
-        <!-- Links -->
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact Us</h5>
           
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Facebook  <i class="fab fa-facebook-f"></i></a>
+            <p>Join us on Facebook</p>
           </li>
           <li>
-            <a href="#!">Twitter  <i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#!">Youtube  <i class="fab fa-youtube"></i></a>
+            <a href="#!"><i class="fab fa-facebook-f"></i></a>
           </li>
         </ul>
-
       </div>
-      <!-- Grid column -->
 
       <hr class="clearfix w-100 d-md-none">
 
-      <!-- Grid column -->
       <div class="col-md-3 mx-auto">
-
-        <!-- Links -->
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Share with the Community</h5>
 
         <ul class="list-unstyled">
@@ -246,18 +231,25 @@
           </li>
         </ul>
 
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Join our Mail List for the latest deals.</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <form method="POST" action="{% url 'maillist' %}" id="newsletter-form" enctype="multipart/form-data">
+              {% csrf_token %}
+              {{ maillist_form | crispy }}
+              <div class="mt-3">
+                <button class="btn btn-main hvr-black-pulse" type="submit">Subscribe!</button>
+              </div>
+            </form>
+          </li>
+        </ul>
       </div>
-      <!-- Grid column -->
 
       <hr class="clearfix w-100 d-md-none">
 
-
     </div>
-    <!-- Grid row -->
-
   </div>
-  <!-- Footer Links -->
-
   <!-- Copyright & Social Media Links -->
   <div class="footer-copyright text-center py-3">
     <h6>Magic Cart</h6>
@@ -266,10 +258,7 @@
   <div class="footer-copyright text-center py-3">© 2022 Copyright:
     <a href="/">magiccart.com</a>
   </div>
-  <!-- Copyright -->
-
 </footer>
-<!-- Footer -->
     
   </body>
 </html>
