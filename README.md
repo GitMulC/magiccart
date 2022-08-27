@@ -48,7 +48,57 @@ The eczar font looks similar to the belern font used in Magic: The Gathering pro
 
 ### Existing Features
 
+- __Navbar__
 
+- Allows the user to navigate the site.
+- Features a registration button to allow new users to join the site.
+- A login button, so that memebers can sign in.
+- A logout button to allow the user to logout from their account.
+- A shopping bag button to allow the user to easliy view their shopping bag.
+- Drop down menus that allow the user to sort products using a specific parameter.
+- A search bar to search for products.
+
+- __Shopping Bag__
+
+- A page that allows the user to check what items they are about to purchase. 
+- Can be viewed at any stage.
+- Can update your purchases quantity or remove it from the bag.
+- Able to view the price of each item, subtotal and delivery cost.
+
+- __Community Page__
+
+- A page to view Magic the Gathering communities on the internet.
+- Feature descriptions of each site, as well as a button that links you to the site.
+
+- __Mail List__
+
+- The footer of the site features an email input field and subscribe button, where the user can submit their email address and be added to the mail list.
+- They will then be emailed about any upcoming sales, deals and other miscellaneous things about the site.
+
+- __Profile__
+
+- Each user can sign up and create their own unique user profile.
+- This profile page contains their checkout information, order history and wishlist.
+
+- __Wishlist__
+
+- A page of products the user has added to their wishlist
+- Each product on the site featues and 'Add to Wishlist' button to allow the user to easily add any product to their wishlist.
+- Each users profile page has a link to their wishlist.
+
+- __Events__
+
+- A page which shows the users what upcoming Magic the Gathering events are taking place in the near future.
+- This is controlled by the site admin.
+
+- __Edit/Delete__
+
+- For the site admin an edit and delete button is found on each product.
+- This is to allow the site admin to edit a product's details, or delete/remove it from the site and make it unavailable for purchase.
+
+- __Toasts__
+
+- Toasts are featured on the site and serve as notifications to inform the user about any actions they may have perfomred such as purchasing, adding things to basket or wishlist etc.
 
 ### Features left to Implement
 
@@ -93,7 +143,14 @@ The eczar font looks similar to the belern font used in Magic: The Gathering pro
 
 ### Local Deployment
 
+- All changes to the models.py file were followed by the command `python3 manage.py makemigrations` & `python3 manage.py migrate`to commit and push the changes to my local workspace.
+- A super user was created using the command `python3 manage.py create superuser`. This was used to sign into the sites admin page.
 
+- To make a local copy of this project, you can clone it by typing the following in your IDE terminal:
+
+    - `git clone https://github.com/GitMulC/magiccart`
+
+- Alternatively, if using Gitpod, you can click the green Gitpod button, or use [this link](https://gitpod.io/#https://github.com/GitMulC/magiccart) 
 
 ## Credits
 
