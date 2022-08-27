@@ -13,7 +13,7 @@
 
 {% block content %}
 
-    <div class="overlay"></div>
+    
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center">
@@ -23,17 +23,15 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mb-4">
             {% for communities in communities %}
-                <div class="col-sm-6 col-md">
-                    <div class="card" style="width: 18rem;">
-                        <a href="{{ community.logo.url }}" target="_blank">
-                            <img src="{{ community.logo.url }}" alt="{{ community.name.name }}" class="card-img-top img-fluid">
-                        </a>
+                <div class="col-sm-4 col-md">
+                    <div class="card text-center" style="width: 18rem;">
+                            <img src="{{ communities.logo.url }}" alt="{{ communities.name.name }}" class="card-img-top img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">{{ community.name }}</h5>
-                            <p class="card-text">{{ community.description }}</p>
-                            <a href="{{ community.url }}" class="btn btn-primary">Visit {{ community.name }}</a>
+                            <h5 class="card-title">{{ communities.name }}</h5>
+                            <p class="card-text">{{ communities.description }}</p>
+                            <a href="{{ communities.url }}" class="btn btn-primary" target="_blank">Visit {{ communities.name }}</a>
                         </div>
                     </div>
                 </div>
