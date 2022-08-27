@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'profiles',
     'maillist',
     'community',
+    'events',
 ]
 
 MIDDLEWARE = [
