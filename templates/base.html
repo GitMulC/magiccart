@@ -38,7 +38,7 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
-      <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+      <div id="topnav" class="row magic-cart-bg pt-lg-2 d-none d-lg-flex">
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
             <a href="{% url 'home' %}" class="nav-link main-logo-link">
               <h2 class="logo-front text-black my-0"><strong>Magic Cart</strong></h2>
@@ -98,12 +98,12 @@
           </div>
         </div>
 
-        <div class="row d-flex justify-content-center bg-white">
-          <div class="container">
+        <div class="row d-flex justify-content-center magic-cart-bg">
+          <div class="container magic-cart-bg">
             <div class="row">
               <div class="col-sm">
 
-                <nav class="navbar navbar-light bg-light d-flex justify-content-center mb-0">
+                <nav class="navbar navbar-light d-flex justify-content-center mb-0 magic-cart-bg">
                   <a href="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Cards
                   </a>
@@ -117,7 +117,7 @@
               </div>
               <div class="col-sm">
                 <div class="dropdown-menu border-0" aria-labelledby="all-products-link"></div>
-                <nav class="navbar navbar-light bg-light d-flex justify-content-center mb-0">
+                <nav class="navbar navbar-light d-flex justify-content-center mb-0 magic-cart-bg">
                   <a href="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Magic Card Types
                   </a>
@@ -133,7 +133,7 @@
                 </nav>
               </div>
               <div class="col-sm">
-                <nav class="navbar navbar-light bg-light d-flex justify-content-center mb-0">
+                <nav class="navbar navbar-light d-flex justify-content-center mb-0 magic-cart-bg">
                   <a href="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Sort by
                   </a>
@@ -147,7 +147,7 @@
             </div>
             {% include 'includes/mobile-top-header.html' %}
 
-            <div class="row bg-white">
+            <div class="row magic-cart-bg">
               <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-top-header" aria-controls="mobile-top-header" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
