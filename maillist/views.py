@@ -21,3 +21,6 @@ def add_subscriber(request):
             instance.save()
             messages.success(request, f'{instance.email} has been added to our mail list!')
             return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+    
+    else:
+        messages.error(request, f'Error, invalid entry!')

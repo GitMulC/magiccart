@@ -231,15 +231,14 @@
           </li>
         </ul>
 
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Join our Mail List for the latest deals.</h5>
-
         <ul class="list-unstyled">
           <li>
+            <label for="email"><strong>Join our Mail List for the latest deals & updates.</strong></label>
             <form method="POST" action="{% url 'maillist' %}" id="maillist-form" enctype="multipart/form-data">
               {% csrf_token %}
-              {{ maillist_form | crispy }}
+              <input id="email" name="email" type="email" placeholder="example@example.com"/>
               <div class="mt-3">
-                <button class="btn btn-main hvr-black-pulse" type="submit">Subscribe!</button>
+                <button class="btn btn-main" type="submit">Subscribe!</button>
               </div>
             </form>
           </li>
