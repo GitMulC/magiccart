@@ -33,17 +33,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {% for product in wishlist_products %}
+                        {% for wishlist_item in wishlist_item %}
                             <tr>
                                 <td>
-                                    <a href="{% url 'card_detail' product.name %}"
-                                    title="{{ product.name }}">
-                                        {{ product.name }}
+                                    <a href="{% url 'wishlist' %}"
+                                    title="{{ wishlist_item.name }}">
+                                        {{ wishlist_item.name }}
                                     </a>
                                 </td>
-                                <td>{{ product.price }}</td>
+                                <td>{{ wishlist_item.price }}</td>
                                 <td>
-                                    Null
+                                    {{ wishlist_item.date_added }}
                                 </td>
                             </tr>
                         {% endfor %}
