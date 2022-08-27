@@ -32,4 +32,4 @@ urlpatterns = [
     path('community/', include('community.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = 'boutique_ado.views.handler404'
+handler404 = 'magic_cart.views.handler404'
