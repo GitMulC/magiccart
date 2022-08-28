@@ -164,11 +164,11 @@ Python code was validated using PEP8 validator [PEP8](http://pep8online.com/).
 
     - No errors were found when passing checkout.css through the official Jigsaw Validator.
     
-    ![(Jigsaw) validator](documents/testing/checkout-css-testing.png)
+    ![(Jigsaw) validator](documents/testing/checkout-css-test.png)
 
     - No errors were found when passing profile.css through the official Jigsaw Validator.
     
-    ![(Jigsaw) validator](documents/testing/checkout-css-testing.png)
+    ![(Jigsaw) validator](documents/testing/checkout-css-test.png)
 
 
 ### Browser Capability
