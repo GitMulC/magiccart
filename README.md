@@ -154,11 +154,30 @@ Python code was validated using PEP8 validator [PEP8](http://pep8online.com/).
 
 ### Responsiveness
 
+- The responsiveness of this site was tested on 3 different devices desktop, tablet and mobile.
+    - ![Am I Responsive](documents/responsive/am-i-responsive.png)
+- Responsiveness on Desktop:
+  - ![Desktop Responsiveness](documents/responsive/products-desktop-chrome.png)
+- Responsiveness on Tablet:
+  - ![Tablet Responsiveness](documents/responsive/communities-tablet-safari.png)
+- Responsiveness on Mobile:
+  - ![Mobile Responsiveness](documents/responsive/product-mobile-firefox.png)
 
 
 ### Tested User Stories
 
+- As a customer I want to be able to view all the details (price, image) of each magic card on the store so that I can make a well informed purchase when visiting the site.
 
+- As a user I want to be able to make a purchase so that I can receive the items from the online store.
+
+- As a customer I want to be able to search for a specific magic card using its details or name so that I can find the card I'm looking for easily.
+
+- As a site user I want to be able to easily register for an account so that I can have my own profile with my own preferences such as previous orders and delivery details.
+- As a site user I want to be able to login and logout from my account so that I can access my profile when I want to.
+- As a site user I want to be able to recover my password if I forget it so that I can regain access to my account.
+
+- As a user I want to be informed on some Magic the Gathering websites so that I can get more involved in the community and inform me more on purchases.
+- As a user I want to be able to know about any updates to the site, including sales, site updates so that I can capitalize on them and be more well informed on the site, which will encourage me to visit more often. I also want to be informed on any Magic the Gathering events taking place, such as tournaments, so that I can get more involved with the community.
 
 ### Unfixed Bugs
 
