@@ -139,7 +139,47 @@ Python code was validated using PEP8 validator [PEP8](http://pep8online.com/).
 
 ### Deployment
 
+- First step was to sign up to the Heroku online application using an email. Then authenticate and create your account on Heroku.
 
+- ![Heroku Sign Up](documents/heroku-screenshots/heroku-signup.png)
+
+- Then I went to my Heroku account dashboard and clicked new, then create new app.
+
+- ![Heroku Dashboard](documents/heroku-screenshots/heroku-dashboard.png)
+
+- ![Heroku Create New App](documents/heroku-screenshots/heroku-create-new-app.png)
+
+- Next I gave my application a unique name polling-magic-community. Then I selected Europe for region.
+
+- ![Heroku App Creation](documents/heroku-screenshots/heroku-app-creation.png)
+
+- I installed the add on Postgres to be used as the cloud based database for this project.
+
+- ![Heroku Addons](documents/heroku-screenshots/postgres-addon.png)
+
+- After the app is created I selected the settings tab. In here I clicked on the Reveal Config Vars button. I first obtained the API key from Cloudinary (the image hosting site used in this project) site. Then input it into the config vars.
+
+- ![Cloudinary API](documents/heroku-screenshots/cloudinary-api.png)
+
+- A env.py was created were the keys for `DATABASE_URL`, `SECRET_KEY` and `CLOUDINARY_URL` would be held.
+
+- I then added a secret key into the env.py file as well as the url from the linked postgres database. 
+
+- ![Secret Key Databse Url](documents/heroku-screenshots/secret-key-database-url.png)
+
+- ![Heroku Tabs](documents/heroku-screenshots/heroku-tabs.png)
+
+- ![Heroku Config Vars & Buildpacks](documents/heroku-screenshots/heroku-settings-tab.png)
+
+- I then clicked on the Deploy tab. Here I selected GitHub as the deployment method. I then connected to my polling-magic repository on GitHub by typing it in and selecting it.
+
+- Finally ensured that automatic deploys were from the main branch. I clicked on enable automatic deploys and built the app.
+
+- ![Heroku Deploy Tab](documents/heroku-screenshots/heroku-deploy-tab.png)
+
+- A Procfile was created into my local workspace in Gitpod. The Procfile is used for declaring what commands are run by your application’s dynos on the Heroku platform.
+
+- After all relevant apps were installed, the requirements.txt file was created using the command `pip3 install -r requirements.txt`. Additionally all apps were listed/frozen onto this txt file using the command `pip3 freeze --local > requirements.txt`.
 
 ### Local Deployment
 
