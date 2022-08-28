@@ -14,15 +14,39 @@
 {% block content %}
     <div class="container">
         <div class="row">
-            <div class="col-7 col-md-6 my-auto">
+            <div class="col-7 col-md-6 my-5">
                 <h1 class="display-4 logo-font text-black">
                     Featured Singles
                 </h1>
+                <p>Our latest cards!</p>
             </div class="my-5">
             <h4>
-                <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase my-5 py-3">Shop Now</a>
+            </h4>
+        </div>
+        <div class="row">
+            <div class="col-7 col-md-6 my-5">
+                <h1 class="display-4 logo-font text-black">
+                    Our Communities
+                </h1>
+                <p>Check out our friends!</p>
+            </div class="my-5">
+            <h4>
+                <a href="{% url 'communities' %}" class="shop-now-button btn btn-md rounded-0 text-uppercase my-5 py-3">Communities</a>
+            </h4>
+        </div>
+        <div class="row">
+            <div class="col-7 col-md-6 my-5">
+                <h1 class="display-4 logo-font text-black">
+                    Events
+                </h1>
+                <p>Check out the latest Magic events near you!</p>
+            </div class="my-5">
+            <h4>
+                <a href="{% url 'events' %}" class="shop-now-button btn btn-md rounded-0 text-uppercase my-5 py-3">Events</a>
             </h4>
         </div>
     </div>
+
 
 {% endblock %}
