@@ -29,22 +29,18 @@
                         <tr>
                             <th>Card Name</th>
                             <th>Price</th>
-                            <th>Date added</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for wishlist_item in wishlist_item %}
                             <tr>
                                 <td>
-                                    <a href="{% url 'wishlist' %}"
+                                    <a href="{% url 'card_detail' product.id %}"
                                     title="{{ wishlist_item.name }}">
                                         {{ wishlist_item.name }}
                                     </a>
                                 </td>
                                 <td>{{ wishlist_item.price }}</td>
-                                <td>
-                                    {{ wishlist_item.date_added }}
-                                </td>
                             </tr>
                         {% endfor %}
                     </tbody>
