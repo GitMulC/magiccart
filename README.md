@@ -2,23 +2,42 @@
 
 Magic Cart is an online e-Commerce store designed to sell magic cards and to also inform the customer on any other Magic the Gathering websites &/or events. The primary purpose of the website is to sell the user Magic the Gathering cards from one supplier.
 
+The final deployed site can be found here https://magic-cart.herokuapp.com/
+
 ## User Stories
 
 - As a customer I want to be able to view all the details (price, image) of each magic card on the store so that I can make a well informed purchase when visiting the site.
+
+![Product View](documents/wireframes/magic-cart-product-pg-desktop.png)
+
+![Mobile Product View](documents/wireframes/magic-cart-product-pg-mobile.png)
+
 - As a user I want to be able to make a purchase so that I can receive the items from the online store.
+
+![Checkout](documents/wireframes/magic-cart-checkout-pg-desktop.png)
+
+![Mobile Checkout](documents/wireframes/magic-cart-checkout-pg-mobile.png)
+
 - As a customer I want to be able to search for a specific magic card using its details or name so that I can find the card I'm looking for easily.
-- As a user I want to be able to add multiple items to my online shopping bag so that I can purchase multiple items at once. 
-- As a customer I want to be able to receive a confirmation email after I purchase a card so that I can verify my own purchase.
-- As a customer I want to be able to easily select quantity of the product when purchasing so that I can make sure I get the right amount.
-- As a site user I want to be able to easily register for an account so that I can have my own profile with my own preferences such as my wishlist, previous orders and delivery details.
+
+![Products View](documents/wireframes/magic-cart-products-pg-desktop.png)
+
+![Mobile Products View](documents/wireframes/magic-cart-products-pg-mobile.png)
+
+- As a site user I want to be able to easily register for an account so that I can have my own profile with my own preferences such as previous orders and delivery details.
 - As a site user I want to be able to login and logout from my account so that I can access my profile when I want to.
 - As a site user I want to be able to recover my password if I forget it so that I can regain access to my account.
-- As a site user I want to be able to receive a confirmation email after I register so that I can verify my account was created successfully.
-- As a user I want to be able to save my favorite products onto a wishlist so that I can come back to the store later and see my favorited items to purchase further down the   line.
-- As a user I want to be informed on some Magic the Gathering websites so that I can get more involved in the community and inform me more on purchases.
-- As a user I want to be able to know about any updates to the site, including sales, site updates so that I can capitalize on them and be more well informed on the site, which will encourage me to visit more often.
-- As a user I want to be informed on any Magic the Gathering events taking place, such as tournaments, so that I can get more involved with the community and use this e-commerce site even more due to it's convenience.
 
+![Profile View](documents/wireframes/magic-cart-user-profile-pg-desktop.png)
+
+![Mobile Profile View](documents/wireframes/magic-cart-products-pg-mobile.png)
+
+- As a user I want to be informed on some Magic the Gathering websites so that I can get more involved in the community and inform me more on purchases.
+- As a user I want to be able to know about any updates to the site, including sales, site updates so that I can capitalize on them and be more well informed on the site, which will encourage me to visit more often. I also want to be informed on any Magic the Gathering events taking place, such as tournaments, so that I can get more involved with the community.
+
+![Community View](documents/wireframes/magic-cart-community-pg-desktop.png)
+
+![Community View](documents/wireframes/magic-cart-community-pg-mobile.png)
 
 ## UX
 
@@ -32,13 +51,21 @@ A black colour `#000000` was used for most of the text on the site, primarily fo
 
 The white colour `#ffffff` was used as a secondary background colour to compliment the harsh orange and make viewing things center of screen less harsh. Made it easier to focus on the details outside the header and footer.
 
+[Magic Cart Colour Palette](documents/assets/magic-cart-colour-palette.png)
+
 ### Typography
 
 The eczar font looks similar to the belern font used in Magic: The Gathering products and logos. Since the belern is a copyrighted font and cannot be used outside of Magic: The Gathering products, eczar was the font selected as the most appropriate.
 
 ### Lucid Charts
 
+Lucid Charts [Lucid Charts](https://www.lucidchart.com/) is a web application that was used to generate the flow chart and entity relationship diagram for this e-commerce site.
 
+- Magic Cart Flow Chart
+![Lucid Chart Flow Diagram](documents/assets/magic-cart-flow-diagram.png)
+
+- Magic Cart Entity Relationship Diagram
+![Lucid Chart ERD](documents/assets/magic-cart-erd.png)
 
 ## Features
 
@@ -98,7 +125,7 @@ The eczar font looks similar to the belern font used in Magic: The Gathering pro
 
 ### Features left to Implement
 
-
+- I would like to implement more sellers on the site. So not only one vendor would be posting cards to sell.
 
 ## Technologies
 
@@ -110,7 +137,7 @@ The eczar font looks similar to the belern font used in Magic: The Gathering pro
 - GitHub was used as a code hosting site for storing the code for this project online securely. [GitHub](https://github.com/)
 - Gitpod is a cloud based IDE which was used to write the code for this project. [Gitpod](https://www.gitpod.io/)
 - Heroku is a cloud based application. It was used for deployment of the application. [Heroku](https://www.heroku.com/home)
-- Lucidchart is a web based tool that was used to create a flowchart for this project. [Lucidchart](https://bit.ly/3rgpbku)
+- Lucidchart is a web based tool that was used to create the entity relationship diagram and flowchart for this project. [Lucidchart](https://www.lucidchart.com/)
 - Postgres is a cloud based database management system that uses SQL. [Postgres](https://www.postgresql.org/)
 
 ## Testing
