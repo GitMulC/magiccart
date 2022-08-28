@@ -148,7 +148,28 @@ Python code was validated using PEP8 validator [PEP8](http://pep8online.com/).
 
 - Python
 
+- JavaScript
+    - No errors were found when passing stripe_elements.js through the official [JSHint](https://jshint.com/)
+
+    ![JSHINT Validation](documents/testing/checkout-js-test.png)
+
+    - No errors were found when passing countryfield.js through the official [JSHint](https://jshint.com/)
+
+    ![JSHINT Validation](documents/testing/profiles-js-test.png)
+
 - CSS
+    - No errors were found when passing base.css through the official Jigsaw Validator.
+    
+    ![(Jigsaw) validator](documents/testing/checkout-css-test.png)
+
+    - No errors were found when passing checkout.css through the official Jigsaw Validator.
+    
+    ![(Jigsaw) validator](documents/testing/checkout-css-testing.png)
+
+    - No errors were found when passing profile.css through the official Jigsaw Validator.
+    
+    ![(Jigsaw) validator](documents/testing/checkout-css-testing.png)
+
 
 ### Browser Capability
 
