@@ -45,7 +45,7 @@ def all_cards(request):
                messages.error(request, "You didn't enter any search criteria!")
                return(redirect(reverse('products')))
 
-            queries = Q(name__icontains=query) | Q(rarity__icontains=query)
+            queries = Q(name__icontains=query)
             cards = cards.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
