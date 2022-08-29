@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from products.models import Card
 
+
 @login_required
 def display_wishlist(request):
     """ A view for showing a user all their wishlist items """

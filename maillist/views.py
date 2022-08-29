@@ -3,7 +3,6 @@ from django.contrib import messages
 from .models import Subscriber
 from .forms import MailListForm
 
-# Create your views here.
 
 def add_subscriber(request):
     """ Add an email to the mail list """
@@ -14,13 +13,16 @@ def add_subscriber(request):
         instance = form.save(commit=False)
 
         if Subscriber.objects.filter(email=instance.email).exists():
-            messages.error(request, f'{instance.email} already subscribed. Please check your email and try again.')
+            messages.error(request, f'{instance.email} already subscribed. \
+                Please check your email and try again.')
 
             return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
         else:
             instance.save()
-            messages.success(request, f'{instance.email} has been added to our mail list!')
+            messages.success(
+                request, f'{instance.email} has been added to our mail list!'
+                )
             return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
-    
+
     else:
         messages.error(request, f'Error, invalid entry!')

@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Card, Type
 
-# Register your models here.
+
 class CardAdmin(admin.ModelAdmin):
     list_display = (
         'name',
@@ -10,6 +10,7 @@ class CardAdmin(admin.ModelAdmin):
     )
 
     ordering = ('name',)
+
 
 class TypeAdmin(admin.ModelAdmin):
     list_display = (

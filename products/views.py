@@ -8,7 +8,7 @@ from django.db.models.functions import Lower
 from .models import Card, Type
 from .forms import ProductForm
 
-# Create your views here.
+
 def all_cards(request):
     """A view to show all card products & incl searching and sorting"""
 
@@ -38,11 +38,11 @@ def all_cards(request):
             cards = cards.filter(type__name__in=types)
             types = Type.objects.filter(name__in=types)
 
-
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-               messages.error(request, "You didn't enter any search criteria!")
+               messages.error(request,
+                            "You didn't enter any search criteria!")
                return(redirect(reverse('products')))
 
             queries = Q(name__icontains=query)
@@ -86,17 +86,18 @@ def add_card(request):
             messages.success(request, 'Successfully added card!')
             return redirect(reverse('card_detail', args=[card.id]))
         else:
-            messages.error(request, 'Failed to add card. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to add card. Please ensure the form is valid.'
+                )
     else:
         form = ProductForm()
-    
+
     template = 'products/add_card.html'
     context = {
         'form': form,
     }
 
     return render(request, 'cards/add_card.html', context)
-
 
 
 @login_required
@@ -114,7 +115,8 @@ def edit_card(request, card_id):
             messages.success(request, 'Successfully updated card!')
             return redirect(reverse('card_detail', args=[card.id]))
         else:
-            messages.error(request, 'Failed to update card. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update card. \
+                Please ensure the form is valid.')
     else:
         form = ProductForm(instance=card)
         messages.info(request, f'You are editing {card.name}')
@@ -126,7 +128,6 @@ def edit_card(request, card_id):
     }
 
     return render(request, template, context)
-
 
 
 @login_required

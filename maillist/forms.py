@@ -3,6 +3,7 @@ from crispy_forms.helper import FormHelper
 from django import forms
 from .models import Subscriber
 
+
 class MailListForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
