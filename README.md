@@ -189,16 +189,32 @@ Python code was validated using PEP8 validator [PEP8](http://pep8online.com/).
 
 - As a customer I want to be able to view all the details (price, image) of each magic card on the store so that I can make a well informed purchase when visiting the site.
 
+  - ![Product Details](documents/responsive/products-desktop-chrome.png)
+
 - As a user I want to be able to make a purchase so that I can receive the items from the online store.
+
+  - ![Bag](documents/user-stories-screenshots/bag-screenshot.png)
 
 - As a customer I want to be able to search for a specific magic card using its details or name so that I can find the card I'm looking for easily.
 
+  - ![Product Search](documents/user-stories-screenshots/search-screenshot.png)
+
 - As a site user I want to be able to easily register for an account so that I can have my own profile with my own preferences such as previous orders and delivery details.
+
+  - ![Profile](documents/user-stories-screenshots/profile-screenshot.png)
+
 - As a site user I want to be able to login and logout from my account so that I can access my profile when I want to.
+
+  - ![Login](documents/user-stories-screenshots/login-screenshot.png)
+
 - As a site user I want to be able to recover my password if I forget it so that I can regain access to my account.
+
+  - ![Password Recovery](documents/user-stories-screenshots/password-screenshot.png)
 
 - As a user I want to be informed on some Magic the Gathering websites so that I can get more involved in the community and inform me more on purchases.
 - As a user I want to be able to know about any updates to the site, including sales, site updates so that I can capitalize on them and be more well informed on the site, which will encourage me to visit more often. I also want to be informed on any Magic the Gathering events taking place, such as tournaments, so that I can get more involved with the community.
+
+  - ![Social](documents/user-stories-screenshots/social-screenshot.png)
 
 ### Unfixed Bugs
 
@@ -272,5 +288,8 @@ Python code was validated using PEP8 validator [PEP8](http://pep8online.com/).
 
 ### Media
 
+- Images for cards were taken from a json file found on Scryfall [Scryfall](https://scryfall.com/)
 
 ### Acknowledgments
+
+- I want to thank Code Institute, (and it's tutors!) and my mentor Marcel for his assitance throughout this projects' development.
