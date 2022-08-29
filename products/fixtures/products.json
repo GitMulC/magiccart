@@ -1,21 +1,90 @@
 [
     {
-        "pk": 1,
+        "pk": 4,
         "model": "products.card",
         "fields": {
-            "name": "Anje Falkenrath",
-            "mana_cost": "{1}{B}{R}",
-            "cmc": 3.0,
-            "type_line": "Legendary Creature — Vampire",
-            "oracle_text": "Haste\n{T}, Discard a card: Draw a card.\nWhenever you discard a card, if it has madness, untap Anje Falkenrath.",
-            "flavor_text": "\"We all hide a little madness behind our sophistication, do we not?\"",
+            "name": "Ninja's Kunai",
+            "mana_cost": "{1}",
+            "cmc": 1.0,
+            "type_line": "Artifact — Equipment",
+            "oracle_text": "Equipped creature has \"{1}, {T}, Sacrifice Ninja's Kunai: Ninja's Kunai deals 3 damage to any target.\"\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",
             "colors": [
-              "B",
-              "R"
+                "N"
             ],
-            "card_img": "media/c19-37-anje-falkenrath.jpg",
-            "card_img_url": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/1/913dd06f-ed2f-4128-9c9d-9cd0d8a55425.jpg?1568003632",
-            "price": 1.97
+            "card_img": "media/neo-252-ninja-s-kunai.jpg",
+            "card_img_url": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/f/af6ae567-c77a-416a-b609-4df3d0dd2e18.jpg?1654568773",
+            "price": 0.02
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.card",
+        "fields": {
+            "name": "Eerie Interlude",
+            "mana_cost": "{2}{W}",
+            "cmc": 3.0,
+            "type_line": "Instant",
+            "oracle_text": "Exile any number of target creatures you control. Return those cards to the battlefield under their owner's control at the beginning of the next end step.",
+            "colors": [
+                "W"
+            ],
+            "card_img": "media/soi-16-eerie-interlude.jpg",
+            "card_img_url": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/c/dcbab6e4-d317-4e73-a6ff-bed49aa6b70b.jpg?1576383745",
+            "price": 1.00
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.card",
+        "fields": {
+            "name": "Mirari's Wake",
+            "mana_cost": "{3}{G}{W}",
+            "cmc": 5.0,
+            "type_line": "Enchantment",
+            "oracle_text": "Creatures you control get +1/+1.\nWhenever you tap a land for mana, add one mana of any type that land produced.",
+            "colors": [
+              "G",
+              "W"
+            ],
+            "card_img": "media/mh2-291-mirari-s-wake.jpg",
+            "card_img_url": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/2/329f8f3d-2fe6-44fa-802f-0c56e3f9998e.jpg?1626100762",
+            "price": 2.30
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.card",
+        "fields": {
+            "name": "Island",
+            "mana_cost": "",
+            "cmc": 0.0,
+            "type_line": "Basic Land — Island",
+            "oracle_text": "({T}: Add {U}.)",
+            "colors": [
+                "U"
+            ],
+            "card_img": "media/mh2-291-mirari-s-wake.jpg",
+            "card_img_url": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/b/8bafc217-3d83-4551-b2e3-3494ec14b2f9.jpg?1660950973",
+            "price": 0.01
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.card",
+        "fields": {
+            "name": "Ashiok, Nightmare Muse",
+            "mana_cost": "{3}{U}{B}",
+            "cmc": 5.0,
+            "type_line": "Legendary Planeswalker — Ashiok",
+            "oracle_text": "+1: Create a 2/3 blue and black Nightmare creature token with \"Whenever this creature attacks or blocks, each opponent exiles the top two cards of their library.\"\n−3: Return target nonland permanent to its owner's hand, then that player exiles a card from their hand.\n−7: You may cast up to three spells from among face-up cards your opponents own from exile without paying their mana costs.",
+            "loyalty": "5",
+            "colors": [
+                "B",
+                "U"
+            ],
+            "card_img": "media/thb-208-ashiok-nightmare-muse.jpg",
+            "card_img_url": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/1/112eb5ce-4fe5-45b3-b810-79fef74b07f9.jpg?1581480976",
+            "price": 3.00
         }
     }
 ]
