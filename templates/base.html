@@ -98,11 +98,52 @@
           </div>
         </div>
 
+        <div class="container no-gutters">
+          <div class="row no-gutters d-flex justify-content-center magic-cart-bg">
+            <div class="col-4">
+              <div class="nav-item d-block d-md-none">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                  <span class="icon">
+                    <i class="fas fa-home"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+            <div class="col-4">
+              <div class="nav-item d-block d-md-none">
+                <a href="{% url 'profile' %}" class="nav-link main-logo-link">
+                  <span class="icon">
+                    <div><i class="fas fa-user"></i></div>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="nav-item d-block d-md-none">
+                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                  <div class="text-center">
+                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                    <p class="my-0">
+                      {% if grand_total %}
+                        ${{ grand_total|floatformat:2 }}
+                      {% else %}
+                        $0.00
+                      {% endif %}
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
         <div class="row d-flex justify-content-center magic-cart-bg">
           <div class="container magic-cart-bg">
             <div class="row">
               <div class="col-sm">
-
                 <nav class="navbar border-dark d-flex justify-content-center mb-0 magic-cart-bg">
                   <a href="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Cards
