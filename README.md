@@ -89,6 +89,8 @@ Lucid Charts [Lucid Charts](https://www.lucidchart.com/) is a web application th
 
 See our live Facebook page [here](https://www.facebook.com/magiccartonline/)
 
+[Magic Cart Facebook](documents/assets/fb-page.png)
+
 ### Keywords
 
 - A website called Wordtracker was used to determine keywords that would be applicable to Magic Cart in the base templates `meta` tags. These keywords would help in search engine optimization of Magic Cart.
