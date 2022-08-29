@@ -8,11 +8,15 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Magic the gathering place to buy magic cards">
+      <meta name="keywords" content="Magic the Gathering, Magic cards, buy online, trading card game,
+                                    singles, buy and sell, trading cards, mtgo cards">
     {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
 
+    <!--Bootstrap & CSS-->
     {% block corecss %}
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <link rel="stylesheet" href="{% static 'css/base.css' %}">
@@ -20,10 +24,13 @@
 
     {% block extra_css %}
     {% endblock %}
-
+    
     {% block corejs %}
+      <!--Font Awesome-->
       <script src="https://kit.fontawesome.com/b6e8d9e3d3.js" crossorigin="anonymous"></script>
+      <!--jQuery-->
       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <!--Bootstrap-->
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -42,6 +49,7 @@
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
             <a href="{% url 'home' %}" class="nav-link main-logo-link">
               <h2 class="logo-front text-black my-0"><strong>Magic Cart</strong></h2>
+              <p class="text-muted">MTG Card Trader</p>
             </a>
           </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
