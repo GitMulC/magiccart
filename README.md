@@ -67,9 +67,16 @@ Lucid Charts [Lucid Charts](https://www.lucidchart.com/) is a web application th
 - Magic Cart Entity Relationship Diagram
 ![Lucid Chart ERD](documents/assets/magic-cart-erd.png)
 
+## Search Engine Optimisation
+
 ### Keywords
 
 - A website called Wordtracker was used to determine keywords that would be applicable to Magic Cart in the base templates `meta` tags. These keywords would help in search engine optimization of Magic Cart.
+
+### Sitemap & robot.txt files
+
+- A site map was generated for this website using the online tool XML-Sitemaps.com and added to the root directory of this site.
+- A robots.txt file was also created in the root directory to tell search engine robots where not to search through.
 
 ## Features
 
@@ -289,11 +296,12 @@ Python code was validated using PEP8 validator [PEP8](http://pep8online.com/).
 - Screenshots and images edited using graphic editor Microsoft Paint. [Mircosoft Paint](https://support.microsoft.com/en-us/windows/open-microsoft-paint-ead1dc5c-abc4-fd2c-d81e-ebb013fbc113)
 - Footer structure and style taken from [mdbootstrap](https://mdbootstrap.com/docs/b4/jquery/navigation/footer/)
 - Keyword determination done using [Wordtracker](https://www.wordtracker.com/)
+- Sitemap generated using [XML-Sitemaps](https://www.xml-sitemaps.com/)
 
 
 ### Media
 
-- Images for cards were taken from a json file found on Scryfall [Scryfall](https://scryfall.com/)
+- Images for cards were taken from json files found on Scryfall [Scryfall](https://scryfall.com/)
 
 ### Acknowledgments
 
