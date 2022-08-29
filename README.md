@@ -2,7 +2,9 @@
 
 Magic Cart is an online e-Commerce store designed to sell magic cards and to also inform the customer on any other Magic the Gathering websites &/or events. The primary purpose of the website is to sell the user Magic the Gathering cards from one supplier.
 
-The final deployed site can be found here https://magic-cart.herokuapp.com/
+[The final deployed site can be found here](https://magic-cart.herokuapp.com/)
+
+For all Testing objectives and conclusions visit [TESTING.md](TESTING.md)
 
 ## User Stories
 
@@ -67,7 +69,25 @@ Lucid Charts [Lucid Charts](https://www.lucidchart.com/) is a web application th
 - Magic Cart Entity Relationship Diagram
 ![Lucid Chart ERD](documents/assets/magic-cart-erd.png)
 
-## Search Engine Optimisation
+## Marketing
+
+### Business Model
+
+- Magic Cart is a small e-commerce site that offers Magic cards at low resonable prices. It's mission statement is to not only sell cards but get people engaged in the Magic the Gathering community through the purchasing of cards on our site. 
+
+#### Customers
+
+- Our target audience & customer demographic is males from the ages of 12 and up. Ideally who are interested already in tabletop or board games.
+
+#### Competitors
+
+- The 3 primary competitors to Magic Cart are Cardkingdom, TCG Player and Cardmarket. As Cardkingdom and TCG Player are based out of the USA and Magic Cart is not, it is unlikely we can currently break into and make a profit on the North American market. As we are based in Europe our main competitor is Cardmarket we are also based in Europe. Our main advantage over Cardmarket at the time of this writing is that our checkout system is more streamlined and easier to utilise for users without a profile. As Cardmarket requires a profile & access to PayPal this makes thier checkout way more tedious. However our market share and amount of products is tiny in comparison. We need to introduce more sellers/vendors to our site if we are to continue competing.
+
+#### Marketing Strategy
+
+- Due to budget constraints and time constraints, we have decided that the most optimal form of marketing at the present is creating a Facebook page for our users. This is ideal for small companies strating out, such as ourselves, as it allows for a word of mouth type strategy with minimal input. Also features on Facebook such as their analytics make it easier to analyse our vistor analytics.
+
+See our live Facebook page [here](https://www.facebook.com/magiccartonline/)
 
 ### Keywords
 
@@ -138,6 +158,11 @@ Lucid Charts [Lucid Charts](https://www.lucidchart.com/) is a web application th
 
 - I would like to implement more sellers on the site. So not only one vendor would be posting cards to sell.
 
+- The mail list would ideally send out information to people on it about the site, sales, down time etc. This is definitely a feature to implement in the near future.
+
+- The ability to add and remove wishlist items for easily and fluidly. 
+
+
 ## Technologies
 
 - Django was used as the web framework for this project. [Django](https://www.djangoproject.com/)
@@ -151,85 +176,16 @@ Lucid Charts [Lucid Charts](https://www.lucidchart.com/) is a web application th
 - Lucidchart is a web based tool that was used to create the entity relationship diagram and flowchart for this project. [Lucidchart](https://www.lucidchart.com/)
 - Postgres is a cloud based database management system that uses SQL. [Postgres](https://www.postgresql.org/)
 
-## Testing
-
-### Code Validation
-
-Python code was validated using PEP8 validator [PEP8](http://pep8online.com/).
-
-- Python
-
-- JavaScript
-    - No errors were found when passing stripe_elements.js through the official [JSHint](https://jshint.com/)
-
-    ![JSHINT Validation](documents/testing/checkout-js-test.png)
-
-    - No errors were found when passing countryfield.js through the official [JSHint](https://jshint.com/)
-
-    ![JSHINT Validation](documents/testing/profiles-js-test.png)
-
-- CSS
-    - No errors were found when passing base.css through the official Jigsaw Validator.
-    
-    ![(Jigsaw) validator](documents/testing/checkout-css-test.png)
-
-    - No errors were found when passing checkout.css through the official Jigsaw Validator.
-    
-    ![(Jigsaw) validator](documents/testing/checkout-css-test.png)
-
-    - No errors were found when passing profile.css through the official Jigsaw Validator.
-    
-    ![(Jigsaw) validator](documents/testing/checkout-css-test.png)
-
-
-### Browser Capability
-
-### Responsiveness
-
-- The responsiveness of this site was tested on 3 different devices desktop, tablet and mobile.
-    - ![Am I Responsive](documents/responsive/am-i-responsive.png)
-- Responsiveness on Desktop:
-  - ![Desktop Responsiveness](documents/responsive/products-desktop-chrome.png)
-- Responsiveness on Tablet:
-  - ![Tablet Responsiveness](documents/responsive/communities-tablet-safari.png)
-- Responsiveness on Mobile:
-  - ![Mobile Responsiveness](documents/responsive/product-mobile-firefox.png)
-
-
-### Tested User Stories
-
-- As a customer I want to be able to view all the details (price, image) of each magic card on the store so that I can make a well informed purchase when visiting the site.
-
-  - ![Product Details](documents/responsive/products-desktop-chrome.png)
-
-- As a user I want to be able to make a purchase so that I can receive the items from the online store.
-
-  - ![Bag](documents/user-stories-screenshots/bag-screenshot.png)
-
-- As a customer I want to be able to search for a specific magic card using its details or name so that I can find the card I'm looking for easily.
-
-  - ![Product Search](documents/user-stories-screenshots/search-screenshot.png)
-
-- As a site user I want to be able to easily register for an account so that I can have my own profile with my own preferences such as previous orders and delivery details.
-
-  - ![Profile](documents/user-stories-screenshots/profile-screenshot.png)
-
-- As a site user I want to be able to login and logout from my account so that I can access my profile when I want to.
-
-  - ![Login](documents/user-stories-screenshots/login-screenshot.png)
-
-- As a site user I want to be able to recover my password if I forget it so that I can regain access to my account.
-
-  - ![Password Recovery](documents/user-stories-screenshots/password-screenshot.png)
-
-- As a user I want to be informed on some Magic the Gathering websites so that I can get more involved in the community and inform me more on purchases.
-- As a user I want to be able to know about any updates to the site, including sales, site updates so that I can capitalize on them and be more well informed on the site, which will encourage me to visit more often. I also want to be informed on any Magic the Gathering events taking place, such as tournaments, so that I can get more involved with the community.
-
-  - ![Social](documents/user-stories-screenshots/social-screenshot.png)
 
 ### Unfixed Bugs
 
+- In the navbar, the dropdown cards button doesn't filter the cards when selecting for example; By Price. The feature does load in the appropriate code but for some reason does not filter the products.
 
+- The background image for the site doesn't load on any of the pages.
+
+- Footer on events page doesn't stick to the bottom
+
+- Top nav bar on mobile has gutters, but `no-gutters` bootstrap class doesn't seem to fix the issue.
 
 ### Deployment
 
